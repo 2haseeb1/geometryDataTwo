@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui added -->
+   
+
+    <title>Document </title>
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-between items-center mx-10 bg-blue-100 rounded mt-10 py-3" >
+         <div >
+            
+            <p class="text-3xl font-bold"> Interactive</p>
+            <p class="text-2xl font-normal">Geometry Genious </p>
+
+         </div>
+         <div>
+            <button class="bg-blue-500 px-10 py-3 text-white rounded font-bold" onclick="redirectBlog()">Blog</button>
+
+         </div>
+        </div>
+    </header>
+   <div class=" flex flex-col md:flex-row mx-10 mt-10">
+    
+    <div class="w-9/12  grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/triangle.png" alt="" class="w-100 px-10">
+<h1 id="triangle-title" class="text-center text-3xl font-semibold pt-3">Triangle</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=0.5xbxh</h3>
+
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-triangle-b"type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="b"><span class="inline mr-3 ml-3" >cm</span><input id="input-triangle-h" type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="h"> 
+</span>
+
+   <br>
+
+
+<div class="mx-auto flex justify-center">
+    <button id="btn-triangle"class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/rectangle.png" alt="" class="w-100 px-10">
+<h1 id="rectangle-title"class="text-center text-3xl font-semibold pt-10">Rectangle</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=w x l</h3>
+
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-rectangle-w" type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="w"><span class="inline mr-3 ml-3" >cm</span><input id="input-rectangle-l"type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="l"> 
+</span>
+
+   <br>
+
+
+<div class="mx-auto flex justify-center">
+    <button id="btn-rectangle" class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/parallelogram.png" alt="" class="w-100 px-10">
+<h1 id="parallelogram-title" class="text-center text-3xl font-semibold pt-10 mt-5">Parallelogram</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=0.5xbxh</h3>
+
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-parallelogram-b"type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="b"><span class="inline mr-3 ml-3" >cm</span><input id="input-parallelogram-h"type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="h"> 
+</span>
+
+   <br>
+
+
+<div class="mx-auto flex justify-center">
+    <button id="btn-parallelogram"class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/rhombus.png" alt="" class="w-100 px-10">
+<h1 id="rhombus-title"class="text-center text-3xl font-semibold pt-3">Rhombus</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=0.5xd<span class="align-sub text-sm">1</span>xd<span class="align-sub text-sm">2</span></h3>
+<p class="flex justify-center">d<span class="align-sub text-sm">1</span>=16cm <span class="pl-1">d</span><span class="align-sub text-sm pr-1">2</span>=8cm</p>
+
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-rhombus-d1" type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="d1"><span class="inline mr-3 ml-3" >cm</span><input id="input-rhombus-d2"type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="d2" > 
+   
+</span>
+
+   <br>
+
+
+<div class="mx-auto flex justify-center">
+    <button id="btn-rhombus" class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/pentagon.png" alt="" class="w-100 px-10">
+<h1 id="pentagon-title" class="text-center text-3xl font-semibold pt-3">Pentagon</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=0.5xpxb</h3>
+<h3 class="flex justify-center">p = 6cm , b= 10cm</h3>
+
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-pentagon-p"type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="p"><span class="inline mr-3 ml-3" >cm</span><input id="input-pentagon-b"type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="b"> 
+</span>
+
+   <br>
+
+
+<div class="mx-auto flex justify-center">
+    <button id="btn-pentagon" class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+<div class="border border-gray-200 bg-white p-5 py-10 w-[420px] md:w-[90%] lg:w-[90%]">
+    
+<img src="./images/ellipse.png" alt="" class="w-100 px-10">
+<h1 id="ellipse-title" class="text-center text-3xl font-semibold pt-3">Ellipse</h1>
+<h3 class="text-center font-normal text-2xl">Area(A)=&#x3C0<span>ab</span></h3>
+<h3 class="flex justify-center">a = 10cm , b = 4cm</h3>
+<span class="mx-auto flex justify-center mt-2">
+    <input id="input-ellipse-a"type="text" class="bg-gray-100 w-20 rounded pr-3 placeholder:pl-3 " placeholder="a"><span class="inline mr-3 ml-3" >cm</span><input id="input-ellipse-b"type="text"class="bg-gray-100 w-20 rounded pl-3 placeholder:pl-2" placeholder="b"> 
+</span>
+
+   <br>
+
+
+<div id="btn-ellipse" class="mx-auto flex justify-center mt-5">
+    <button class="bg-blue-500 px-20 text-white rounded mx-auto py-3 font-semibold">calculate</button>
+</div>
+</div>
+
+
+
+
+    </div>
+     <div class="w-9/12 md:w-3/12 bg-blue-200 h-10  ">
+        <h3 class="text-center underline text-3xl font-semi-bold">Area Calculation </h3>
+        <!-- table included -->
+        <div class="overflow-x-hidden">
+            <table class="table w-full">
+              <!-- head -->
+              <thead id="table-value">
+                <!-- <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th>Job</th>
+                  <th>Favorite Color</th>
+                </tr> -->
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+               
+                
+              </tbody>
+            </table>
+          </div>
+     </div>
+
+   </div>
+   <script src="./common.js"></script>
+   <script src="./app.js"></script>   
+</body>
+</html>
